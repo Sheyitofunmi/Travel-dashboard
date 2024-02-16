@@ -1,9 +1,37 @@
-# React + Vite
+# Travel Agency Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Travel Agency Dashboard project! This project is a dashboard designed for travel agencies to manage their bookings, customer information, and trip details efficiently.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# Travel-dashboard
+- **Booking Management**: Easily manage bookings including creating, updating, and canceling reservations.
+- **Customer Information**: Keep track of customer details and preferences for personalized service.
+- **Trip Management**: Organize and update trip itineraries, availability, and pricing.
+- **User Authentication**: Secure login system to ensure only authorized personnel can access the dashboard.
+
+## Live Site
+
+Check out the live version of the Travel Agency Dashboard [here](https://travel-dashboard.netlify.app/).
+
+![Travel Agency Dashboard](https://mir-s3-cdn-cf.behance.net/project_modules/fs/7fb73684082983.5d5160618cc9b.png)
+
+## Technologies Used
+
+- React
+- Tailwind CSS
+
+
+## Setup Instructions
+
+1. Clone the repository.
+2. Install dependencies using `npm install`.
+3. Start the development server using `npm run dev`.
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to this project, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
