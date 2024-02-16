@@ -150,7 +150,7 @@ const Flight = () => {
               FILTER
             </button>
             <div className="relative">
-              <select className="block appearance-none w-full bg-[#fff] text-[11px] font-medium  text-[#3d5654] border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded-full shadow leading-tight focus:outline-none focus:ring-4 focus:ring-indigo-200">
+              <select className="block appearance-none w-full bg-[#fff] text-[11px] font-medium  border-none text-[#3d5654] border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded-full shadow leading-tight focus:outline-none focus:ring-4 focus:ring-indigo-200">
                 <option>TICKET OF CLASS</option>
                 <option>Option 2</option>
                 <option>Option 3</option>
@@ -238,7 +238,6 @@ const Flight = () => {
               </div>
             </div>
 
-            {/* card 3 */}
             <div
               className={`${styles.card} flex relative justify-between items-center w-full px-3 bg-white py-5 border-dashed border-b-2 border-[#E3F2F1]`}
             >
@@ -275,7 +274,7 @@ const Flight = () => {
                 </button>
               </div>
             </div>
-            {/* card 4 */}
+
             <div className="flex justify-between rounded-b-2xl  items-center w-full px-3 bg-white py-5">
               <div>
                 <img src="/emirates.svg" alt="" className="w-16 h-16" />
