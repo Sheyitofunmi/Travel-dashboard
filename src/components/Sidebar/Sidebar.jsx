@@ -106,19 +106,14 @@ const Sidebar = () => {
       >
         <div className="">
           <div className="pt-6 pb-4 bg-[#3D5654] lg:rounded-[17px]">
-            <div className=" flex justify-center flex-col items-center  lg:ml-1 ml-100 lg:gap-[10px] gap-[8px] text-[#fff]">
-              <div className="">
-                <img
-                  alt=""
-                  className="w-[30px] rounded-[50%]   lg:w-20"
-                  src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2ljbGUlMjBzaGFwZWQlMjBmYWNlfGVufDB8fDB8fHww"
-                />
-              </div>
-              <h2>ALEX JOHNSON</h2>
+            <div className=" flex justify-center flex-col items-center  lg:ml-1 ml-100 gap-1 text-[#fff]">
+              <img src="/face.svg" alt="" className="w-[30px] lg:w-20" />
+
+              <h2>AJEWOLE SEYI</h2>
               <p className="text-[10px]">sheyitofunmi22@gmail.com</p>
             </div>
           </div>
-          <div className="mt-6">
+          <div className="mt-4">
             {menuItems.map(({ text, icon, href }, index) => (
               // <NavLink
               //   key={index}
@@ -145,7 +140,7 @@ const Sidebar = () => {
                 to={href} // Use 'to' instead of 'href'
                 className={`${styles["menu-item"]} ${
                   text === activeMenuItem ? styles["active-menu-item"] : ""
-                } m-auto flex px-12 py-3 ml-5 text-[12px] text-[#fff] gap-3  `}
+                } m-auto flex px-4 py-3 ml-5 text-[11px] text-[#fff] gap-3  `}
                 onClick={() => handleMenuItemClick({ text, icon, href })}
               >
                 <FontAwesomeIcon
@@ -158,31 +153,40 @@ const Sidebar = () => {
             ))}
           </div>
         </div>
-        <div className="align-center justify-start mt-2 hover:bg-[#305771] hover:text-[#fff] h-11 ml-[4.2rem] text-start  rounded-[10px]">
-          <p className="text-[12px] text-[#D6A217]">ACTIVE USERS</p>
+        <div className="align-center justify-center mt-2 hover:bg-[#305771] hover:text-[#fff] pt-5 px-3 ml-4 text-start">
+          <p className="text-[14px] text-[#D6A217] pb-3">ACTIVE USERS</p>
 
           <div className="flex -space-x-2 overflow-hidden">
             <img
-              className="inline-block h-10 w-10 rounded-full ring-2 ring-white"
+              className="inline-block h-10 w-10 rounded-full ring-2 ring-[#425C5A]"
               src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
               alt=""
             />
             <img
-              className="inline-block h-10 w-10 rounded-full ring-2 ring-white"
+              className="inline-block h-10 w-10 rounded-full ring-2 ring-[#425C5A]"
               src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
               alt=""
             />
             <img
-              className="inline-block h-10 w-10 rounded-full ring-2 ring-white"
+              className="inline-block h-10 w-10 rounded-full ring-2 ring-[#425C5A]"
               src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
               alt=""
             />
             <img
-              className="inline-block h-10 w-10 rounded-full ring-2 ring-white"
+              className="inline-block h-10 w-10 rounded-full ring-2 ring-[#425C5A]"
               src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
               alt=""
             />
+            <img
+              src="/circle.svg"
+              alt=""
+              className="inline-block h-10 w-10 rounded-full ring-2 ring-[#425C5A]"
+            />
           </div>
+        </div>
+
+        <div className="px-5 pb-4">
+          <img src="/map-one.svg" alt="" className="pt-4 " />
         </div>
       </div>
 
@@ -211,7 +215,7 @@ const Sidebar = () => {
             {menuItems.map(({ text, icon, href }, index) => (
               <NavLink
                 key={index}
-                to={href} // Use 'to' instead of 'href'
+                to={href}
                 className={`${styles["menu-item"]} ${
                   text === activeMenuItem ? styles["active-menu-item"] : ""
                 } m-auto flex px-12 py-3 ml-5 bg-blue-700 text-[12px] gap-3 active:bg-red-700 hover:bg-[#305771] hover:text-[#fff] `}

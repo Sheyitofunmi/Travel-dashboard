@@ -1,0 +1,25 @@
+.card::after{
+    content: "";
+    width:20px;
+    height: 20px;
+    background-color: #E1ECEB;
+    position:absolute;
+    bottom: -10px;
+    left: -8px;
+    z-index: 1;
+    border-radius: 50%;
+    
+}
+.card::before{
+    content: "";
+    width:20px;
+    height: 20px;
+    background-color: #E1ECEB;
+    position:absolute;
+    bottom: -10px;
+    right: -8px;
+    z-index: 1;
+    border-radius: 50%;
+    
+
+}

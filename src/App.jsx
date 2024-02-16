@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.module.css";
 import { Outlet } from "react-router-dom";
 import Sidebar from "./components/Sidebar/Sidebar";
 
@@ -8,7 +8,7 @@ function App() {
       className=" flex justify-center items-center min-h-screen bg-cover bg-center "
       style={{ backgroundImage: "url('/bg.svg')" }}
     >
-      <div className="flex bg-[#E1ECEB]  items-start w-[95%] max-w-4xl lg:rounded-[17px]  gap-5 justify-center  ">
+      <div className="flex bg-[#E1ECEB] my-5  items-start w-[95%] max-w-4xl lg:rounded-[17px]  gap-5 justify-center  ">
         <Sidebar />
         {/* Main Content */}
 
