@@ -84,19 +84,13 @@ const Sidebar = () => {
           onClick={() => setExpandedState(!isExpanded)}
         >
           <span
-            className={
-              isExpanded ? "bg-[#305771] " : "bg-black lg:bg-[#305771]"
-            }
+            className={isExpanded ? "bg-[#fff] " : "bg-[#425C5A] lg:bg-[#fff]"}
           ></span>
           <span
-            className={
-              isExpanded ? "bg-[#305771] " : "bg-black lg:bg-[#305771]"
-            }
+            className={isExpanded ? "bg-[#fff] " : "bg-[#425C5A] lg:bg-[#fff]"}
           ></span>
           <span
-            className={
-              isExpanded ? "bg-[#305771] " : "bg-black lg:bg-[#305771]"
-            }
+            className={isExpanded ? "bg-[#fff] " : "bg-[#425C5A] lg:bg-[#fff]"}
           ></span>
         </button>
       </div>
@@ -174,31 +168,31 @@ const Sidebar = () => {
 
       <div
         ref={sidebarRef}
-        className={` bg-white z-20 transition-all duration-300 fixed top-0 left-0 bottom-0 lg:top-7 lg:bottom-2 lg:left-5 lg:shadow-xl lg:rounded-[17px] w-60 ${
+        className={` bg-[#425C5A] z-20 transition-all duration-300 fixed top-0 left-0 bottom-0 lg:top-7 lg:bottom-2 lg:left-5 lg:shadow-xl lg:rounded-[17px] w-60 ${
           isExpanded ? " block lg:hidden " : " hidden "
         } `}
       >
         <div className="grid">
           <div className="nav-heading grid grid-cols-2fr-1fr file:grid-rows-1fr  h-[75px] ">
             {isExpanded && (
-              <div className=" flex justify-center items-center mt-[14px] lg:ml-1 ml-100 lg:gap-[14px] gap-[8px] text-[#101010]">
-                <img
-                  alt=""
-                  className="w-[30px] rounded-[50%] lg:w-12"
-                  src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHdvbWFuJTIwZmFjZSUyMGNsb3NlJTIwdXB8ZW58MHx8MHx8fDA%3D"
-                />
-                <h2>Lopeer</h2>
+              <div className="pt-6 pb-4 bg-[#3D5654] lg:rounded-[17px]">
+                <div className=" flex justify-center flex-col items-center  lg:ml-1 ml-100 gap-1 text-[#fff]">
+                  <img src="/face.svg" alt="" className="w-[30px] lg:w-20" />
+
+                  <h2>AJEWOLE SEYI</h2>
+                  <p className="text-[10px]">sheyitofunmi22@gmail.com</p>
+                </div>
               </div>
             )}
           </div>
-          <div className="mt-[10px]">
+          <div className="mt-[10px] pt-10">
             {menuItems.map(({ text, icon, href }, index) => (
               <NavLink
                 key={index}
                 to={href}
                 className={`${styles["menu-item"]} ${
-                  text === activeMenuItem ? styles["active-menu-item"] : ""
-                } m-auto flex px-12 py-3 ml-5 bg-blue-700 text-[12px] gap-3 active:bg-red-700 hover:bg-[#305771] hover:text-[#fff] `}
+                  text === activeMenuItem ? styles[" "] : ""
+                } m-auto flex px-4 py-3 ml-5 text-[11px] text-[#fff] gap-3  `}
                 onClick={() => handleMenuItemClick({ text, icon, href })}
               >
                 <FontAwesomeIcon
@@ -211,13 +205,48 @@ const Sidebar = () => {
             ))}
           </div>
         </div>
-        <div className="flex align-center justify-start mt-10 hover:bg-[#305771] hover:text-[#fff] h-11 mx-4 text-start  rounded-[10px]">
+        {/* <div className="flex align-center justify-start mt-10 hover:bg-[#305771] hover:text-[#fff] h-11 mx-4 text-start  rounded-[10px]">
           <img
             className="w-[20px] mx-3 hover:text-[#fff]"
             src="/vector3.svg"
             alt=""
           />
           {isExpanded && <div className="text-[12px] mt-3 mr-1  ">Log Out</div>}
+        </div> */}
+        <div className="align-center justify-center mt-2 hover:bg-[#305771] hover:text-[#fff] pt-5 px-3 ml-4 text-start">
+          <p className="text-[14px] text-[#D6A217] pb-3">ACTIVE USERS</p>
+
+          <div className="flex -space-x-2 overflow-hidden">
+            <img
+              className="inline-block h-10 w-10 rounded-full ring-2 ring-[#425C5A]"
+              src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              alt=""
+            />
+            <img
+              className="inline-block h-10 w-10 rounded-full ring-2 ring-[#425C5A]"
+              src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              alt=""
+            />
+            <img
+              className="inline-block h-10 w-10 rounded-full ring-2 ring-[#425C5A]"
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
+              alt=""
+            />
+            <img
+              className="inline-block h-10 w-10 rounded-full ring-2 ring-[#425C5A]"
+              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              alt=""
+            />
+            <img
+              src="/circle.svg"
+              alt=""
+              className="inline-block h-10 w-10 rounded-full ring-2 ring-[#425C5A]"
+            />
+          </div>
+        </div>
+
+        <div className="px-5 pb-4">
+          <img src="/map-one.svg" alt="" className="pt-4 " />
         </div>
       </div>
     </div>

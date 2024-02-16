@@ -12,7 +12,6 @@ import {
 const Flight = () => {
   return (
     <div>
-      {/* first */}
       <div className="bg-[#fff] p-3 rounded-lg flex items-center gap-6">
         <div className="w-1/2  flex flex-col gap-3 items-center justify-center">
           <div className="w-full">
@@ -113,7 +112,7 @@ const Flight = () => {
                 style={{ color: "#3d5654" }}
                 className="mr-2"
               />
-              TRAVELLER
+              TRAVELER
             </button>
           </div>
           <div>
@@ -138,9 +137,7 @@ const Flight = () => {
         </div>
       </div>
 
-      {/* secound */}
       <div>
-        {/* header */}
         <div className="flex justify-between items-center pt-4">
           <div>
             <h1>RESULT (25)</h1>
@@ -152,21 +149,25 @@ const Flight = () => {
             >
               FILTER
             </button>
-            <div>
-              <select
-                id="country"
-                name="TICKECT OF CLASS"
-                className="  w-[200px] bg-[#fff] text-[#3d5654] focus:outline-none focus:ring-4 font-medium rounded-full text-[11px] px-5 flex items-center text-center py-2.5  mb-2"
-              >
-                <option value="volvo">TICKECT OF CLASS</option>
-                <option value="saab">Saab</option>
-                <option value="fiat">Fiat</option>
-                <option value="audi">Audi</option>
+            <div className="relative">
+              <select className="block appearance-none w-full bg-[#fff] text-[11px] font-medium  text-[#3d5654] border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded-full shadow leading-tight focus:outline-none focus:ring-4 focus:ring-indigo-200">
+                <option>TICKET OF CLASS</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
               </select>
+              <div className="pointer-events-none pb-[10px] absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                <svg
+                  className="fill-current h-4 w-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M10 12L15 7 5 7z" />
+                </svg>
+              </div>
             </div>
           </div>
         </div>
-        {/* card */}
+
         <div className="flex gap-5 py-5">
           <div className="w-[65%] border-2 ">
             <div
@@ -203,7 +204,6 @@ const Flight = () => {
               </div>
             </div>
 
-            {/* card 2 */}
             <div
               className={`${styles.card} flex relative justify-between items-center w-full px-3 bg-white py-5 border-dashed border-b-2 border-[#E3F2F1]`}
             >

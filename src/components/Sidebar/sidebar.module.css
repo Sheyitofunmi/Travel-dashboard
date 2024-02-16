@@ -103,8 +103,10 @@ button:focus {
    
    
   }
+ .menu-item:hover{
+  font-size: 900;
+ }
 
- 
   
 
   .active-menu-item{ 
