@@ -168,7 +168,6 @@ const Flight = () => {
         </div>
         {/* card */}
         <div className="flex gap-5 py-5">
-          {/* 1 */}
           <div className="w-[65%] border-2 ">
             <div
               className={`${styles.card} flex relative justify-between rounded-t-2xl  items-center w-full px-3 bg-white py-5 border-dashed border-b-2 border-[#E3F2F1]`}
@@ -309,25 +308,55 @@ const Flight = () => {
               </div>
             </div>
           </div>
-          {/* 2 */}
-          <div className="bg-[#425C5A] py-3 px-3 w-[35%] rounded-2xl">
-            <div className="flex justify-between items-center pt-3 pb-6">
-            <div>
-              <p className="text-[#fff] text-[10px] font-[500]">FROM</p>
-              <h1 className="text-[#fff]  text-[16px]">JFK</h1>
+
+          <div className=" py-3   w-[35%] rounded-2xl">
+            <div className="flex bg-[#425C5A] justify-between rounded-t-2xl items-center p-3 pb-6 h-[20%]">
+              <div>
+                <p className="text-[#fff] text-[10px] font-[500]">FROM</p>
+                <h1 className="text-[#fff]  text-[16px]">JFK</h1>
+              </div>
+              <div>
+                <p className="text-[#fff] text-[10px] font-[500]">NON-STOP</p>
+              </div>
+              <div>
+                <p className="text-[#fff] text-[10px] font-[500]">TO</p>
+                <h1 className="text-[#fff]  text-[16px]">BMW</h1>
+              </div>
             </div>
-            <div>
-              <p className="text-[#fff] text-[10px] font-[500]">NON-STOP</p>
+            <div className=" border-2 bg-[#425C5A] border-[#425C5A] h-[40%]">
+              <img src="/map-3.svg" alt="" />
             </div>
-            <div>
-              <p className="text-[#fff] text-[10px] font-[500]">TO</p>
-              <h1 className="text-[#fff]  text-[16px]">BMW</h1>
+
+            <div className="bg-[#3D5654] p-3 rounded-b-2xl  h-[40%]">
+              <div className="flex justify-between items-center">
+                <div className=" text-[10px] py-1 px-3 bg-[#C99C33] rounded-lg text-[#fff]">
+                  NON STOP
+                </div>
+                <div className="text-[10px]  text-[#fff]">NON STOP</div>
+                <div className=" text-[10px]  text-[#fff]">MORE STOP</div>
+              </div>
+
+              <div className="pb-3 pt-4">
+                <p className="text-[#fff]  text-[12px]">PRICE</p>
+                <div className="flex pt-5">
+                  <div
+                    className={`${styles.range} h-[1px] relative w-1/2 bg-gray-400  `}
+                  >
+                    <div className="absolute w-[70px] h-[70px] bg-transparent top-[30px] left-[12px]">
+                      <div className={styles.bubble}>$500</div>
+                    </div>
+                  </div>
+
+                  <div
+                    className={`${styles.range} h-[1px] relative w-1/2 bg-gray-400   `}
+                  >
+                    <div className="absolute w-[70px] h-[70px] bg-transparent top-[30px] left-[12px]">
+                      <div className={styles.bubble}>$500</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            </div>
-            <div className="border-1 border-red-700">
-              <img src="/map2.svg" alt="" />
-            </div>
-            <div className="bg-[#3d5654]"></div>
           </div>
         </div>
       </div>

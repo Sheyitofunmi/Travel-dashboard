@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import { NavLink } from "react-router-dom"; // Import NavLink
+import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHome,
@@ -36,7 +36,7 @@ const Sidebar = () => {
   // Function to handle menu item click
   const handleMenuItemClick = (menuItem) => {
     setActiveMenuItem(menuItem.text);
-    console.log("Active Menu Item:", menuItem.text); // Add this line to log the active menu item
+    console.log("Active Menu Item:", menuItem.text);
   };
 
   const menuItems = [
@@ -115,29 +115,9 @@ const Sidebar = () => {
           </div>
           <div className="mt-4">
             {menuItems.map(({ text, icon, href }, index) => (
-              // <NavLink
-              //   key={index}
-              //   to={href} // Use 'to' instead of 'href'
-              //   className={`${styles["menu-item"]} ${
-              //     text === activeMenuItem ? styles["active-menu-item"] : ""
-              //   } m-auto flex px-12 py-3 ml-5 text-[12px] gap-3 hover:text-[#fff] `}
-              //   onClick={() => handleMenuItemClick({ text, icon, href })}
-              //   style={
-              //     text === activeMenuItem
-              //       ? { backgroundColor: "#E1ECEB" } // Change this to whatever red color you prefer
-              //       : {}
-              //   }
-              // >
-              //   <FontAwesomeIcon
-              //     icon={icon}
-              //     className="w-4 hover:text-[#fff]"
-              //     style={{ color: "#D6A217" }}
-              //   />
-              //   <p>{text}</p>
-              // </NavLink>
               <NavLink
                 key={index}
-                to={href} // Use 'to' instead of 'href'
+                to={href}
                 className={`${styles["menu-item"]} ${
                   text === activeMenuItem ? styles["active-menu-item"] : ""
                 } m-auto flex px-4 py-3 ml-5 text-[11px] text-[#fff] gap-3  `}
