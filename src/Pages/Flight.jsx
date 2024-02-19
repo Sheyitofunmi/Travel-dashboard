@@ -12,8 +12,8 @@ import {
 const Flight = () => {
   return (
     <div>
-      <div className="bg-[#fff] p-3 rounded-lg flex items-center gap-6">
-        <div className="w-1/2  flex flex-col gap-3 items-center justify-center">
+      <div className="bg-[#fff] p-3 rounded-lg lg:flex-row flex-col flex items-center gap-6">
+        <div className="lg:w-1/2  flex flex-col gap-3 items-center justify-center">
           <div className="w-full">
             <div className="relative right-0 bg-[#E1ECEB] rounded-2xl">
               <ul
@@ -21,9 +21,9 @@ const Flight = () => {
                 data-tabs="tabs"
                 role="list"
               >
-                <li className="z-30 flex-auto text-center">
+                <li className="z-24 flex-auto text-center">
                   <a
-                    className="z-30 flex items-center justify-center w-full px-0 py-1 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit"
+                    className="z-24 flex items-center justify-center w-full px-0 py-1 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit"
                     data-tab-target=""
                     active
                     role="tab"
@@ -36,9 +36,9 @@ const Flight = () => {
                     <span className="ml-1 text-[10px]">NEW YORK (JFK)</span>
                   </a>
                 </li>
-                <li className="z-30 flex-auto text-center">
+                <li className="z-24 flex-auto text-center">
                   <a
-                    className="z-30 flex bg-[#425C5A] items-center justify-center w-full px-0 py-1 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit"
+                    className="z-24 flex bg-[#425C5A] items-center justify-center w-full px-0 py-1 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit"
                     data-tab-target=""
                     role="tab"
                     aria-selected="false"
@@ -51,9 +51,9 @@ const Flight = () => {
                     />
                   </a>
                 </li>
-                <li className="z-30 flex-auto text-center">
+                <li className="z-24 flex-auto text-center">
                   <a
-                    className="z-30 flex items-center justify-center w-full px-0 py-1 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit"
+                    className="z-24 flex items-center justify-center w-full px-0 py-1 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit"
                     data-tab-target=""
                     role="tab"
                     aria-selected="false"
@@ -142,7 +142,7 @@ const Flight = () => {
           <div>
             <h1>RESULT (25)</h1>
           </div>
-          <div className="flex gap-5">
+          <div className="flex gap-5 ">
             <button
               type="button"
               className="text-[#3d5654] bg-[#fff] w-[120px] hover:bg-[#C99C33] hover:text-[#fff] focus:outline-none focus:ring-4 font-medium rounded-full text-[11px] px-5 py-2.5 text-center mb-2"
@@ -150,7 +150,7 @@ const Flight = () => {
               FILTER
             </button>
             <div className="relative">
-              <select className="block appearance-none w-full bg-[#fff] text-[11px] font-medium  border-none text-[#3d5654] border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded-full shadow leading-tight focus:outline-none focus:ring-4 focus:ring-indigo-200">
+              <select className="block appearance-none w-full bg-[#fff] text-[11px] font-medium  border-none text-[#3d5654] border border-gray-400 hover:border-gray-500 px-5 py-2.5 rounded-full shadow leading-tight focus:outline-none focus:ring-4 focus:ring-indigo-200">
                 <option>TICKET OF CLASS</option>
                 <option>Option 2</option>
                 <option>Option 3</option>
@@ -168,8 +168,8 @@ const Flight = () => {
           </div>
         </div>
 
-        <div className="flex gap-5 py-5">
-          <div className="w-[65%] border-2 ">
+        <div className="flex gap-5 py-5 lg:flex-row flex-col">
+          <div className="lg:w-[65%] border-2 ">
             <div
               className={`${styles.card} flex relative justify-between rounded-t-2xl  items-center w-full px-3 bg-white py-5 border-dashed border-b-2 border-[#E3F2F1]`}
             >
@@ -308,7 +308,7 @@ const Flight = () => {
             </div>
           </div>
 
-          <div className=" py-3   w-[35%] rounded-2xl">
+          <div className=" py-3   lg:w-[35%] rounded-2xl">
             <div className="flex bg-[#425C5A] justify-between rounded-t-2xl items-center p-3 pb-6 h-[20%]">
               <div>
                 <p className="text-[#fff] text-[10px] font-[500]">FROM</p>

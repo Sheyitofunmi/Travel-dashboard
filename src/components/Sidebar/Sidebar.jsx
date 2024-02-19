@@ -35,6 +35,9 @@ const Sidebar = () => {
 
   // Function to handle menu item click
   const handleMenuItemClick = (menuItem) => {
+    
+    setExpandedState(!isExpanded);
+
     setActiveMenuItem(menuItem.text);
     console.log("Active Menu Item:", menuItem.text);
   };
@@ -75,7 +78,9 @@ const Sidebar = () => {
   return (
     <div className={styles.container}>
       <div className="lg:hidden">
-        <button
+    
+       <div className={styles.navv}>
+       <button
           className={
             isExpanded
               ? styles["hamburger"]
@@ -84,15 +89,16 @@ const Sidebar = () => {
           onClick={() => setExpandedState(!isExpanded)}
         >
           <span
-            className={isExpanded ? "bg-[#fff] " : "bg-[#425C5A] lg:bg-[#fff]"}
+            className={isExpanded ? "bg-[#fff] " : "bg-[#fff] lg:bg-[#fff]"}
           ></span>
           <span
-            className={isExpanded ? "bg-[#fff] " : "bg-[#425C5A] lg:bg-[#fff]"}
+            className={isExpanded ? "bg-[#fff] " : "bg-[#fff] lg:bg-[#fff]"}
           ></span>
           <span
-            className={isExpanded ? "bg-[#fff] " : "bg-[#425C5A] lg:bg-[#fff]"}
+            className={isExpanded ? "bg-[#fff] " : "bg-[#fff] lg:bg-[#fff]"}
           ></span>
         </button>
+       </div>
       </div>
 
       <div
@@ -168,7 +174,7 @@ const Sidebar = () => {
 
       <div
         ref={sidebarRef}
-        className={` bg-[#425C5A] z-20 transition-all duration-300 fixed top-0 left-0 bottom-0 lg:top-7 lg:bottom-2 lg:left-5 lg:shadow-xl lg:rounded-[17px] w-60 ${
+        className={` bg-[#425C5A] z-50 transition-all duration-300 fixed top-0 left-0 bottom-0 lg:top-7 lg:bottom-2 lg:left-5 lg:shadow-xl lg:rounded-[17px] w-60 ${
           isExpanded ? " block lg:hidden " : " hidden "
         } `}
       >

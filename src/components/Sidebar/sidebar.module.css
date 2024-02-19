@@ -34,15 +34,22 @@ button:focus {
     display: grid;
   }
   
-  
+  .navv{
+    z-index: 25;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding-block: 10px;
+    padding: 1;
+    background: #425C5A;
+    width: 100vw
+  }
   .hamburger {
     background: none;
     border: none;
-    z-index: 25;
     cursor: pointer;
-    position: fixed;
-    top: 20px;
-    left: 10px;
+    z-index: 100;
+    
   }
   
   .hamburger span {
