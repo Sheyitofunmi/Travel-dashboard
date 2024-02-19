@@ -211,14 +211,7 @@ const Sidebar = () => {
             ))}
           </div>
         </div>
-        {/* <div className="flex align-center justify-start mt-10 hover:bg-[#305771] hover:text-[#fff] h-11 mx-4 text-start  rounded-[10px]">
-          <img
-            className="w-[20px] mx-3 hover:text-[#fff]"
-            src="/vector3.svg"
-            alt=""
-          />
-          {isExpanded && <div className="text-[12px] mt-3 mr-1  ">Log Out</div>}
-        </div> */}
+
         <div className="align-center justify-center mt-2 hover:bg-[#305771] hover:text-[#fff] pt-5 px-3 ml-4 text-start">
           <p className="text-[14px] text-[#D6A217] pb-3">ACTIVE USERS</p>
 
